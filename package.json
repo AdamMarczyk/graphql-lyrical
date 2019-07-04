@@ -8,7 +8,9 @@
     "url": "https://github.com/StephenGrider/Lyrical-GraphQL"
   },
   "scripts": {
-    "dev": "nodemon index.js --ignore client"
+    "dev": "nodemon index.js --ignore client",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -38,6 +40,8 @@
     "react-router": "^3.0.2",
     "style-loader": "^0.13.1",
     "webpack": "^2.2.0",
-    "webpack-dev-middleware": "^1.9.0"
-  }
+    "webpack-dev-middleware": "^1.9.0",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
